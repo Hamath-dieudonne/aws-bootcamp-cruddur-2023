@@ -1,5 +1,5 @@
 # Week 0 — Billing and Architecture
-Business Scenario :
+**Business Scenario :
 
 Your company has asked to put together a technical presentation on the proposed architecture that will be implemented so it can be reviewed by the fractional CTO.
 Your presentation must include a technical architectural diagram and breakdown of possible services used along with their justification.
