@@ -45,15 +45,21 @@ tasks:
 
 ### Set environment variables
 The following examples show how you can configure environment variables for the default user.
+This is not my security credentials
 
 ```
-export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-export AWS_DEFAULT_REGION=us-west-2
+export AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
+export AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+export AWS_DEFAULT_REGION="us-west-2"
 ```
 
 To save our sercurity credentials in gitpod :
 
+```
+gp env AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
+gp env AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+gp env AWS_DEFAULT_REGION="us-west-2"
+```
 
 ### CloudShell
 
