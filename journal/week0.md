@@ -9,7 +9,7 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ### Create a new User and Generate AWS Credentials
 - Go to IAM Users Console
-- `` Enable console access`` for the user
+- ``Enable console access`` for the user
 - Create a new``Admin`` Group and apply ``AdministratorAccess``
 - Create the user and go find and click into the user
 - Click on ``Security Credentials`` and ``Create Access key``
@@ -17,8 +17,7 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ![IAM User](assets/IAM_user.PNG)
 
-CloudShell
-![CloudShell](assets/Cloudsell.PNG)
+
 
 ### Install and verify AWS CLI
 These commands allowed me to download and install AWS CLI in the gitpod environment
@@ -43,6 +42,10 @@ tasks:
 ```
 
 ![AWS_CLI](assets/AWS_CLI.PNG)
+
+### CloudShell
+
+![CloudShell](assets/Cloudsell.PNG)
 
 ### Logical Diagram :
 
