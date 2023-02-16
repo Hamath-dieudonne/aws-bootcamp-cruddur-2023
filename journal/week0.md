@@ -14,9 +14,27 @@ CloudShell
 ![CloudShell](assets/Cloudsell.PNG)
 
 ### Install and verify AWS CLI
-I followed the instructions on [AWS CLI Documentation page](https://aws.amazon.com/fr/cli/)
+These commands allowed me to download and install AWS CLI in the gitpod environment
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
 
-AWS CLI
+Update my .gitpod.yml to include the following task
+```yml
+tasks:
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial 
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
+```
+
 ![AWS_CLI](assets/AWS_CLI.PNG)
 
 ### Logical Diagram :
