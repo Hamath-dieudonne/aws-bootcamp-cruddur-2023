@@ -43,6 +43,18 @@ tasks:
 
 ![AWS_CLI](assets/AWS_CLI.PNG)
 
+### Set environment variables
+The following examples show how you can configure environment variables for the default user.
+
+```
+export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+export AWS_DEFAULT_REGION=us-west-2
+```
+
+To save our sercurity credentials in gitpod :
+
+
 ### CloudShell
 
 ![CloudShell](assets/Cloudsell.PNG)
