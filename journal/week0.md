@@ -7,7 +7,14 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ## Homework Required
 
-IAM User
+### Create a new User and Generate AWS Credentials
+- Go to IAM Users Console
+- `` Enable console access`` for the user
+- Create a new``Admin`` Group and apply ``AdministratorAccess``
+- Create the user and go find and click into the user
+- Click on ``Security Credentials`` and ``Create Access key``
+
+
 ![IAM User](assets/IAM_user.PNG)
 
 CloudShell
