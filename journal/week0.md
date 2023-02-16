@@ -12,6 +12,13 @@ IAM User
 
 CloudShell
 ![CloudShell](assets/Cloudsell.PNG)
+
+### Install and verify AWS CLI
+I followed the instructions on [AWS CLI Documentation page](https://aws.amazon.com/fr/cli/)
+
+AWS CLI
+![AWS_CLI](assets/AWS_CLI.PNG)
+
 ### Logical Diagram :
 
 ![Logical diagram](https://user-images.githubusercontent.com/59735117/218827213-b1082d9c-28c6-4f43-885d-8480ecdc2a44.PNG)
