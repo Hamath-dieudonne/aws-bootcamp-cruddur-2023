@@ -103,7 +103,7 @@ We need to turn on Billing Alerts to receive alerts
 - Under ``Billing Preferences`` Choose ``Receive Billing Alerts``
 - Save Preferences
 
-![free tier alert](assets/free tier alert.PNG)
+![free tier alert](assets/free_tier_alert.PNG)
 
 ## Creating a Billing Alarm
 ### Create SNS Topic
@@ -127,7 +127,7 @@ aws sns subscribe \
 Check your email and confirm the subscription
 So when you create an SNS topic and add a notification endpoint like email, you have to confirm it, otherwise it won't work.
 
-![billing_alarm](assets/billing alarm.PNG)
+![billing_alarm](assets/billing_alarm.PNG)
 ### Create Alarm
 - aws cloudwatch put-metric-alarm
 - Create an Alarm via AWS CLI
@@ -219,7 +219,7 @@ Here is our Example Tag Budget that has been set at $10.
 
 
 #### DailyEstimateCharge Alarm
-![DailyEstimateCharge](assets/cloudwatch alarm.PNG)
+![DailyEstimateCharge](assets/DailyEstimate.PNG)
 
 
 
