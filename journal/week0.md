@@ -7,12 +7,22 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ## Homework Required
 
+## Getting the AWS CLI Working
+We'll be using the AWS CLI often in this bootcamp, so we'll proceed to installing this account
+
+### Install AWS CLI
+- We are going to install When our Gitpod environment launches.
+- We are going to set AWS CLI to use partial autopromt mode to make it easier to debug CLI commands.
+- The bash commands we are using are the same as the AWS CLI Install Instructions
+
 ### Create a new User and Generate AWS Credentials
 - Go to IAM Users Console
 - ``Enable console access`` for the user
 - Create a new``Admin`` Group and apply ``AdministratorAccess``
 - Create the user and go find and click into the user
 - Click on ``Security Credentials`` and ``Create Access key``
+- Choose AWS CLI access
+- Download the CSV with the credentials
 
 
 ![IAM User](assets/IAM_user.PNG)
