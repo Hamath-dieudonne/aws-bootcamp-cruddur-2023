@@ -153,9 +153,13 @@ Contents of ``notifications-with-subscribers.json``:
 **Billing Alarm**
 ![Billing Alarm](assets/billing alarm.PNG)
 
+
+
 **DailyEstimateCharge Alarm Code**
 
 ![DailyEstimateCharge](assets/alarmconfig.PNG)
+
+
 
 **DailyEstimateCharge Alarm proof**
 ![cloudwatch alarm](assets/cloudwatch alarm.PNG)
