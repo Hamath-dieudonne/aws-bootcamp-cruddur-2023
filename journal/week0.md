@@ -9,7 +9,7 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ### Conceptual Diagram
 
-![Conceptual](assets/Conceptual.PNG)
+![Conceptual](assets/conceptual.PNG)
 
 [Shared Lucid Conceptual Diagramm link](https://lucid.app/lucidchart/dbd374de-afdb-4304-ac52-cdbe76211691/edit?viewport_loc=-142%2C280%2C2220%2C974%2C0_0&invitationId=inv_ff0e2afc-331f-4201-b511-ee74d1488f08)
 
