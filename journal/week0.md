@@ -134,7 +134,7 @@ Check your email and confirm the subscription
 
 
 ## Create an AWS Budget
-I foolowed instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples) to create my budget
+You can follow instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples)
 
 Get your AWS Accound ID
 
@@ -147,7 +147,7 @@ aws sts get-caller-identity --query account --output text
 
 ```json
 aws budgets create-budget \
-    --account-id 111122223333 \
+    --account-id AccountID \
     --budget file://budget.json \
     --notifications-with-subscribers file://notifications-with-subscribers.json
 ```
