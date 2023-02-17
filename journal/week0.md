@@ -64,8 +64,10 @@ gp env AWS_DEFAULT_REGION="us-west-2"
 ```
 Get-caller-identity command is equivalent to whoami
 ```
-
+aws sts get-caller-identity
 ```
+
+![aws sts get-caller-identity](assts/get.PNG)
 
 ### CloudShell
 
