@@ -62,11 +62,13 @@ gp env AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
 gp env AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 gp env AWS_DEFAULT_REGION="us-west-2"
 ```
-Get-caller-identity command is equivalent to whoami
+### Check that the AWS CLI is working and you are the expected user
 ```
 aws sts get-caller-identity
 ```
 The reason I did this was to make sure I am who I say I am, because when you start having multiple logins and multiple profiles, you can run things in the wrong place without realizing it.
+
+You should see something like this :
 
 ![aws sts get-caller-identity](assets/get.PNG)
 
@@ -81,7 +83,42 @@ You can also do that in CloudSell
 
 [Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
 
-### To create a Cost and Usage budget
+### Enable Billing
+We need to turn on Billing Alerts to receive alerts
+
+- In your Root Account go to the Billing Page
+- Under ``Billing Preferences`` Choose ``Receive Billing Alerts``
+- Save Preferences
+
+![free tier alert](assets/free tier alert.PNG)
+
+## Creating a Billing Alarm
+### Create SNS Topic
+- We need an SNS Topic before we create an alarm
+- The SNS topic is what will delivery us an alert when we get overdilled
+
+We'll create a SNS Topic
+
+```
+aws sns create-topic --name billing-alarm
+```
+which will return a TopicARN
+We'll create a subscription supply the TopicARN and our Email
+
+```
+aws sns subscribe \
+    --topic-arn TopicARN
+    --protocol email\
+    --notification-endpoint your@email.com
+```
+Check your email and confirm the subscription
+
+### Create Alarm
+- aws cloudwatch put-metric-alarm
+- Create an Alarm via AWS CLI
+- We need to update the configuration json script with the TopicARN we generated earlier
+- We are just a json file beacause --metrics is required for expressions and so it's easier to us a JSON file
+
 I foolowed instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples) to create my budget
 
 ```json
@@ -147,10 +184,13 @@ Contents of ``notifications-with-subscribers.json``:
     }
 ]
 ```
-- Budget
+Back to the budgets.
+Here is our Example Tag Budget that has been set at $10.
+
 ![Budget](assets/Budgets.PNG)
 
-- Billing Alarm
+Billing Alarm
+So when you create an SNS topic and add a notification endpoint like email, you have to confirm it, otherwise it won't work.
 ![Billing Alarm](assets/billing alarm.PNG)
 
 - DailyEstimateCharge Alarm Code
