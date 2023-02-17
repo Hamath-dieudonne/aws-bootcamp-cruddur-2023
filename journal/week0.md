@@ -119,6 +119,8 @@ Check your email and confirm the subscription
 - We need to update the configuration json script with the TopicARN we generated earlier
 - We are just a json file beacause --metrics is required for expressions and so it's easier to us a JSON file
 
+
+## Create an AWS Budget
 I foolowed instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples) to create my budget
 
 ```json
