@@ -103,7 +103,7 @@ We need to turn on Billing Alerts to receive alerts
 - Under ``Billing Preferences`` Choose ``Receive Billing Alerts``
 - Save Preferences
 
-![free tier alert](assets/free_tier_alert.PNG)
+![free tier alert](assets/free_tier-alert.PNG)
 
 ## Creating a Billing Alarm
 ### Create SNS Topic
