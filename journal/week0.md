@@ -7,13 +7,18 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ## Homework Required
 
+### Conceptual Diagram
+
+![Conceptual](assets/Conceptual.PNG)
+
+[Shared Lucid Conceptual Diagramm link](https://lucid.app/lucidchart/dbd374de-afdb-4304-ac52-cdbe76211691/edit?viewport_loc=-142%2C280%2C2220%2C974%2C0_0&invitationId=inv_ff0e2afc-331f-4201-b511-ee74d1488f08)
 
 ### Logical Diagram :
 
-![Logical diagram](https://user-images.githubusercontent.com/59735117/218827213-b1082d9c-28c6-4f43-885d-8480ecdc2a44.PNG)
+![Logical](assets/Logical.PNG)
 
 
-[Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
+[Shared Lucid Logical Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C408%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
 
 ## Getting the AWS CLI Working
 We'll be using the AWS CLI often in this bootcamp, so we'll proceed to installing this account
