@@ -148,21 +148,12 @@ Contents of ``notifications-with-subscribers.json``:
 ]
 ```
 
-![Budget](assets/Budgets.PNG)
-
-**Billing Alarm**
-![Billing Alarm](assets/billing alarm.PNG)
+![Budget](assets/Budgets.PNG "Budget") ![Billing Alarm](assets/billing alarm.PNG "Billing Alarm") ![DailyEstimateCharge](assets/alarmconfig.PNG "DailyEstimateCharge Alarm Code") ![cloudwatch alarm](assets/cloudwatch alarm.PNG "DailyEstimateCharge Alarm proof")
 
 
 
-**DailyEstimateCharge Alarm Code**
-
-![DailyEstimateCharge](assets/alarmconfig.PNG)
 
 
-
-**DailyEstimateCharge Alarm proof**
-![cloudwatch alarm](assets/cloudwatch alarm.PNG)
 
 
 
