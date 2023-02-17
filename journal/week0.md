@@ -136,6 +136,15 @@ Check your email and confirm the subscription
 ## Create an AWS Budget
 I foolowed instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples) to create my budget
 
+Get your AWS Accound ID
+
+```
+aws sts get-caller-identity --query account --output text
+```
+- Supply your AWS Account ID
+- Update the json file
+- This is another case with AWS CLI its just much easier to json file due to lots of nested json
+
 ```json
 aws budgets create-budget \
     --account-id 111122223333 \
@@ -211,7 +220,7 @@ So when you create an SNS topic and add a notification endpoint like email, you 
 - DailyEstimateCharge Alarm Code
 ![DailyEstimateCharge](assets/alarmconfig.PNG)
 
-- DailyEstimateCharge Alarm proof
+You can see 
 ![cloudwatch alarm](assets/cloudwatch alarm.PNG)
 
 
