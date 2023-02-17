@@ -145,7 +145,7 @@ aws sts get-caller-identity --query account --output text
 - Update the json file
 - This is another case with AWS CLI its just much easier to json file due to lots of nested json
 
-```json
+```
 aws budgets create-budget \
     --account-id AccountID \
     --budget file://budget.json \
