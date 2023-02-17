@@ -77,12 +77,11 @@ Get-caller-identity command is equivalent to whoami
 
 
 [Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
+
+
 Budget
 
 ![Budget](assets/Budgets.PNG)
-
-Billing alarm
-![Billing alarm](assets/billing alarm.PNG)
 
 
 
