@@ -150,9 +150,15 @@ Contents of ``notifications-with-subscribers.json``:
 
 ![Budget](assets/Budgets.PNG)
 
+Billing Alarm
+![Billing Alarm](assets/billing alarm.PNG)
+
 DailyEstimateCharge Alarm
 
-![DailyEstimateCharge](/assets/alarmconfig.PNG)
+![DailyEstimateCharge](assets/alarmconfig.PNG)
+
+
+![cloudwatch alarm](assets/cloudwatch alarm.PNG)
 
 
 
