@@ -26,7 +26,6 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 ```
-Get-caller-identity command is equivalent to whoami
 
 
 
@@ -63,6 +62,10 @@ gp env AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE"
 gp env AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 gp env AWS_DEFAULT_REGION="us-west-2"
 ```
+Get-caller-identity command is equivalent to whoami
+```
+
+```
 
 ### CloudShell
 
@@ -74,4 +77,7 @@ gp env AWS_DEFAULT_REGION="us-west-2"
 
 
 [Share Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
+
+![Billing alarm](assets/billing alarm.PNG)
+![Budget](assets/Budgets.PNG)
 
