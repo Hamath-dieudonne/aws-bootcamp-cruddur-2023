@@ -66,10 +66,11 @@ Get-caller-identity command is equivalent to whoami
 ```
 aws sts get-caller-identity
 ```
+The reason I did this was to make sure I am who I say I am, because when you start having multiple logins and multiple profiles, you can run things in the wrong place without realizing it.
 
 ![aws sts get-caller-identity](assets/get.PNG)
 
-### CloudShell
+You can also do that in CloudSell
 
 ![CloudShell](assets/Cloudsell.PNG)
 
