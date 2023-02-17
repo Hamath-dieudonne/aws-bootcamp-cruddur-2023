@@ -76,8 +76,10 @@ Get-caller-identity command is equivalent to whoami
 ![Logical diagram](https://user-images.githubusercontent.com/59735117/218827213-b1082d9c-28c6-4f43-885d-8480ecdc2a44.PNG)
 
 
-[Share Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
+[Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
 
 ![Billing alarm](assets/billing alarm.PNG)
+
+
 ![Budget](assets/Budgets.PNG)
 
