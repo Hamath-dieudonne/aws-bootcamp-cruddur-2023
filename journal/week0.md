@@ -80,6 +80,7 @@ Get-caller-identity command is equivalent to whoami
 
 ![Billing alarm](assets/billing alarm.PNG)
 
+Budgee
 
 ![Budget](assets/Budgets.PNG)
 
