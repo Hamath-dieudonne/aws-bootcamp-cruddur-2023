@@ -7,6 +7,14 @@ The company also wants to generally know what spend we expect to encounter and h
 
 ## Homework Required
 
+
+### Logical Diagram :
+
+![Logical diagram](https://user-images.githubusercontent.com/59735117/218827213-b1082d9c-28c6-4f43-885d-8480ecdc2a44.PNG)
+
+
+[Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
+
 ## Getting the AWS CLI Working
 We'll be using the AWS CLI often in this bootcamp, so we'll proceed to installing this account
 
@@ -86,12 +94,7 @@ You can also do that in CloudSell
 
 ![CloudShell](assets/Cloudsell.PNG)
 
-### Logical Diagram :
 
-![Logical diagram](https://user-images.githubusercontent.com/59735117/218827213-b1082d9c-28c6-4f43-885d-8480ecdc2a44.PNG)
-
-
-[Shared Lucid Diagramm link](https://lucid.app/lucidchart/14e70fc9-ab7f-47f0-956b-79569afa3ab1/edit?viewport_loc=249%2C524%2C2633%2C1155%2C0_0&invitationId=inv_3bc883e1-377c-42ce-b2a7-feb175999ccc)
 
 ### Enable Billing
 We need to turn on Billing Alerts to receive alerts
