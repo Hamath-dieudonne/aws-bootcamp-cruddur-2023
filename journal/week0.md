@@ -96,7 +96,7 @@ Contents of ``budget.json``:
 ```json
 {
     "BudgetLimit": {
-        "Amount": "100",
+        "Amount": "10",
         "Unit": "USD"
     },
     "BudgetName": "Example Tag Budget",
@@ -150,14 +150,14 @@ Contents of ``notifications-with-subscribers.json``:
 
 ![Budget](assets/Budgets.PNG)
 
-Billing Alarm
+**Billing Alarm**
 ![Billing Alarm](assets/billing alarm.PNG)
 
-DailyEstimateCharge Alarm
+**DailyEstimateCharge Alarm Code**
 
 ![DailyEstimateCharge](assets/alarmconfig.PNG)
 
-
+**DailyEstimateCharge Alarm proof**
 ![cloudwatch alarm](assets/cloudwatch alarm.PNG)
 
 
