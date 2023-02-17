@@ -125,13 +125,15 @@ aws sns subscribe \
     --notification-endpoint your@email.com
 ```
 Check your email and confirm the subscription
-
+So when you create an SNS topic and add a notification endpoint like email, you have to confirm it, otherwise it won't work.
+![Billing Alarm](assets/billing alarm.PNG)
 ### Create Alarm
 - aws cloudwatch put-metric-alarm
 - Create an Alarm via AWS CLI
 - We need to update the configuration json script with the TopicARN we generated earlier
 - We are just a json file beacause --metrics is required for expressions and so it's easier to us a JSON file
 
+![cloudwatch alarm](assets/cloudwatch alarm.PNG)
 
 ## Create an AWS Budget
 You can follow instructions on AWS [CLI Documentation page](https://docs.aws.amazon.com/cli/latest/reference/budgets/create-budget.html#examples)
@@ -213,15 +215,13 @@ Here is our Example Tag Budget that has been set at $10.
 
 ![Budget](assets/Budgets.PNG)
 
-Billing Alarm
-So when you create an SNS topic and add a notification endpoint like email, you have to confirm it, otherwise it won't work.
-![Billing Alarm](assets/billing alarm.PNG)
+
+
 
 - DailyEstimateCharge Alarm Code
 ![DailyEstimateCharge](assets/alarmconfig.PNG)
 
-You can see 
-![cloudwatch alarm](assets/cloudwatch alarm.PNG)
+
 
 
 
