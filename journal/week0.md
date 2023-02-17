@@ -67,7 +67,7 @@ Get-caller-identity command is equivalent to whoami
 aws sts get-caller-identity
 ```
 
-![aws sts get-caller-identity](assts/get.PNG)
+![aws sts get-caller-identity](assets/get.PNG)
 
 ### CloudShell
 
