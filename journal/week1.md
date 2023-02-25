@@ -60,6 +60,9 @@ ENV FLASK_ENV=development
 EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
+
+![doker file backend](assets/dockerfileback.PNG)
+
 ### Build Container
 ```
 docker build -t  backend-flask ./backend-flask
@@ -98,6 +101,8 @@ RUN npm install
 EXPOSE ${PORT}
 CMD ["npm", "start"]
 ```
+![Docker file](assets/dokerfilefront.PNG)
+
 ### Build Container
 
 ``docker build -t frontend-react-js ./frontend-react-js``
@@ -135,6 +140,8 @@ networks:
     driver: bridge
     name: cruddur
 ```
+
+![docker compose](assets/deckercomposefile.PNG)
 
 ## Adding DynamoDB Local and Postgres
 We are going to use Postgres and DynamoDB local in future labs We can bring them in as containers and reference them externally
