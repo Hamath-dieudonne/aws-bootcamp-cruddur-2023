@@ -30,7 +30,7 @@ Gitpod was since it supports multiple Version Control Services (VCS).. The compa
 ## Containerize Backend
 
 ### Run Python
-```yml
+```
 cd backend-flask
 export FRONTEND_URL="*"
 export BACKEND_URL="*"
@@ -45,7 +45,7 @@ cd ..
 
 ### Add Dockerfile
 Create a file here: ``backend-flask/Dockerfile``
-```yml
+```Dockerfile
 FROM python:3.10-slim-buster
 
 WORKDIR /backend-flask
