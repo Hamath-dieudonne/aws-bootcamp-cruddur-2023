@@ -45,7 +45,7 @@ cd ..
 
 ### Add Dockerfile
 Create a file here: ``backend-flask/Dockerfile``
-```
+```js
 FROM python:3.10-slim-buster
 
 WORKDIR /backend-flask
@@ -66,7 +66,7 @@ docker build -t  backend-flask ./backend-flask
 ```
 ### Run Container
 Run
-```
+```js
 docker run --rm -p 4567:4567 -it backend-flask
 FRONTEND_URL="*" BACKEND_URL="*" docker run --rm -p 4567:4567 -it backend-flask
 export FRONTEND_URL="*"
