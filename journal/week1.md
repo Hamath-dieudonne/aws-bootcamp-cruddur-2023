@@ -200,7 +200,7 @@ We are going to use Postgres and DynamoDB local in future labs We can bring them
 
 Lets integrate the following into our existing docker compose file:
 
-```
+
 ### DynamoDB Local
 ```
 services:
@@ -270,5 +270,5 @@ To install the postgres client into Gitpod
       echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
-      
+```      
 ![Postgres](assets/databas.PNG)
