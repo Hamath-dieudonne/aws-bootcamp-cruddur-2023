@@ -154,11 +154,11 @@ After running "docker-compose", my ports should be open, but they are not. There
 
 So I went to see the logs and indeed there was a problem.
 
-![logs](assets/logs.PNG)
+![my logs](assets/logs.PNG)
 
 The first error comes from "app.py" at line 19 (printf) which must be deleted or remove the "f".
 
-![erreurbackend](assets/erreurbackend.PNG)
+![erreur backend](assets/erreurbackend.PNG)
 
 The other error was that I did not execute npm install (npm i) in frontend-react-js.
 
