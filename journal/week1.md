@@ -30,7 +30,7 @@ Gitpod was since it supports multiple Version Control Services (VCS).. The compa
 ## Containerize Backend
 
 ### Run Python
-```
+```Dockerfile
 cd backend-flask
 export FRONTEND_URL="*"
 export BACKEND_URL="*"
@@ -66,7 +66,7 @@ docker build -t  backend-flask ./backend-flask
 ```
 ### Run Container
 Run
-```yml
+```Dockerfile
 docker run --rm -p 4567:4567 -it backend-flask
 FRONTEND_URL="*" BACKEND_URL="*" docker run --rm -p 4567:4567 -it backend-flask
 export FRONTEND_URL="*"
@@ -87,7 +87,7 @@ npm i
 ```
 ### Create Docker File
 Create a file here: ``frontend-react-js/Dockerfile``
-```yml
+```Dockerfile
 FROM node:16.18
 
 ENV PORT=3000
