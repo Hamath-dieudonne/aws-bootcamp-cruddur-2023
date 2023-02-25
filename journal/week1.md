@@ -147,13 +147,32 @@ networks:
 
 ![docker compose](assets/deckercompose.PNG)
  
-### Erreur
+### I have encountered a few errors
 After running "docker-compose", my ports should be open, but they are not. There must be a problem.
+
 ![port failed](assets/port_failed.PNG)
 
 So I went to see the logs and indeed there was a problem.
+
 ![logs](assets/logs.PNG)
 
+The first error comes from "app.py" at line 19 (printf) which must be deleted or remove the "f".
+
+![erreurbackend](assets/erreurbackend.PNG)
+
+The other error was that I did not execute npm install (npm i) in frontend-react-js.
+
+![frontlog](assets/frontlog.PNG)
+
+```
+cd frontend-react-js
+npm i
+```
+![npm i](assets/npmi.PNG)
+
+Now we can run "docker-compse up" and we can see that our ports are available and open. Make sure to unlock the port in the port tab.
+
+![ports available](assets/portavailable.PNG)
 
 ## Adding DynamoDB Local and Postgres
 We are going to use Postgres and DynamoDB local in future labs We can bring them in as containers and reference them externally
