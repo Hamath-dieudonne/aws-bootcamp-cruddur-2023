@@ -176,7 +176,23 @@ Now we can run "docker-compse up" and we can see that our ports are available an
 
 ## Create the notifications feature (Backend and Frontend)
 
+Update openapi to add notifications
 
+![oenapi notif](assets/addnotifications.PNG)
+
+### create new notification backend endpoint
+
+![new notificat](assets/newnotificat.PNG)
+
+![notifi-service](assets/notifi-service.PNG)
+
+### Implement frontend notification page
+
+![app](assets/appjs.PNG)
+![Notification Feed Page](assets/notiffeedpagejs.PNG)
+
+Final
+![Notification page](assets/notificationpagecrud.PNG)
 ## Adding DynamoDB Local and Postgres
 We are going to use Postgres and DynamoDB local in future labs We can bring them in as containers and reference them externally
 
