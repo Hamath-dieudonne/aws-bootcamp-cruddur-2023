@@ -143,6 +143,18 @@ networks:
 
 ![docker compose](assets/deckercomposefile.PNG)
 
+``docker-compose up``
+
+![docker compose](assets/deckercompose.PNG)
+ 
+### Erreur
+After running "docker-compose", my ports should be open, but they are not. There must be a problem.
+![port failed](assets/port_failed.PNG)
+
+So I went to see the logs and indeed there was a problem.
+![logs](assets/logs.PNG)
+
+
 ## Adding DynamoDB Local and Postgres
 We are going to use Postgres and DynamoDB local in future labs We can bring them in as containers and reference them externally
 
