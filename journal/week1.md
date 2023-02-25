@@ -45,7 +45,7 @@ cd ..
 
 ### Add Dockerfile
 Create a file here: ``backend-flask/Dockerfile``
-```js
+```docker
 FROM python:3.10-slim-buster
 
 WORKDIR /backend-flask
