@@ -29,8 +29,8 @@ Gitpod was since it supports multiple Version Control Services (VCS).. The compa
 
 ## Containerize Backend
 
-###Run Python
-```
+### Run Python
+```python
 cd backend-flask
 export FRONTEND_URL="*"
 export BACKEND_URL="*"
