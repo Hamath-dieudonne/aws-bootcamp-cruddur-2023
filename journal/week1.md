@@ -174,6 +174,9 @@ Now we can run "docker-compse up" and we can see that our ports are available an
 
 ![ports available](assets/portavailable.PNG)
 
+## Create the notifications feature (Backend and Frontend)
+
+
 ## Adding DynamoDB Local and Postgres
 We are going to use Postgres and DynamoDB local in future labs We can bring them in as containers and reference them externally
 
