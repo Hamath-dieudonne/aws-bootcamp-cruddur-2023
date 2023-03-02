@@ -48,3 +48,27 @@ app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 ```
+
+## X-Ray
+Instrument AWS X-Ray for Flask
+```
+export AWS_REGION="ca-central-1"
+gp env AWS_REGION="ca-central-1"
+```
+Add to the requirements.txt
+```
+aws-xray-sdk
+```
+Install pythonpendencies
+```
+pip install -r requirements.txt
+```
+Add to app.py
+```
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+
+xray_url = os.getenv("AWS_XRAY_URL")
+xray_recorder.configure(service='Cruddur', dynamic_naming=xray_url)
+XRayMiddleware(app, xray_recorder)
+```
