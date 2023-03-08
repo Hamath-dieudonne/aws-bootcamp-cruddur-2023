@@ -13,6 +13,8 @@ OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
 OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
 OTEL_SERVICE_NAME: "${HONEYCOMB_SERVICE_NAME}"
 ```
+![otel](assets/addotl.PNG)
+
 We'll add the following files to our ``requirements.txt``
 ```
 opentelemetry-api 
@@ -21,6 +23,9 @@ opentelemetry-exporter-otlp-proto-http
 opentelemetry-instrumentation-flask 
 opentelemetry-instrumentation-requests
 ```
+![requirment](assets/requirment.PNG)
+
+
 We'll install these dependencies:
 ```
 pip install -r requirements.txt
@@ -34,6 +39,8 @@ from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 ```
+![app](assets/addapp.PNG)
+
 ```
 # Initialize tracing and an exporter that can send data to Honeycomb
 provider = TracerProvider()
@@ -48,6 +55,10 @@ app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 ```
+
+![honeycomb](assets/honeyc.PNG)
+
+![honey](assets/honey2.PNG)
 
 ## X-Ray
 Instrument AWS X-Ray for Flask
