@@ -141,6 +141,11 @@ We need to add these two env vars to our backend-flask in our ``docker-compose.y
 
 ![test log](assets/testlog.PNG)
 
+
+### AWS X-Ray subsegment
+
+![AWS X-Ray subsegment](assets/subsegment.PNG)
+
 ## Rollbar
 
 Create a new project in Rollbar called ``Cruddur``
