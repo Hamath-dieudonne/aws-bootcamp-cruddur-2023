@@ -102,11 +102,15 @@ Add ``aws/json/xray.json``
   }
 }
 ```
+
 ```
 aws xray create-group \
    --group-name "Cruddur" \
    --filter-expression "service(\"$FLASK_ADDRESS\")
 ```
+![xray json](assets/addxrayjson.PNG)
+
+![group name](assets/groupname.PNG)
 ```
 aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
 ```
@@ -123,8 +127,16 @@ aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
     ports:
       - 2000:2000/udp
 ```
+![daemon](assets/daemon.PNG)
+
 We need to add these two env vars to our backend-flask in our ``docker-compose.yml`` file
 ```
       AWS_XRAY_URL: "*4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}*"
       AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
 ```
+
+![xray](assets/xrayaws.PNG)
+
+![trace consol](assets/traceconsol.PNG)
+
+![test log](assets/testlog.PNG)
