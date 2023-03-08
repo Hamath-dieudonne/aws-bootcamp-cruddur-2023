@@ -168,6 +168,9 @@ Import for Rollbar
 import rollbar
 import rollbar.contrib.flask
 from flask import got_request_exception
+```
+![import](assets/importrollbar.PNG)
+```
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
 @app.before_first_request
 def init_rollbar():
@@ -192,3 +195,9 @@ def rollbar_test():
     rollbar.report_message('Hello World!', 'warning')
     return "Hello World!"
 ```
+
+![test](assets/helloword.PNG)
+
+![rollbar](assets/rollbar.PNG)
+
+![rol](assets/rl.PNG)
