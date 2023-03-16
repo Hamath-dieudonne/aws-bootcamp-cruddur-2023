@@ -43,7 +43,7 @@ React.useEffect(()=>{
 
 ### Signin Page
 
-```
+```js
 import { Auth } from 'aws-amplify';
 
 const [cognitoErrors, setCognitoErrors] = React.useState('');
@@ -77,7 +77,7 @@ if (cognitoErrors){
 ```
 
 ### Signup Page
-```
+```js
 import { Auth } from 'aws-amplify';
 
 const [cognitoErrors, setCognitoErrors] = React.useState('');
@@ -117,7 +117,7 @@ if (cognitoErrors){
 ```
 
 ### Confirmation Page
-```
+```js
 const resend_code = async (event) => {
   setCognitoErrors('')
   try {
@@ -153,7 +153,7 @@ const onsubmit = async (event) => {
 ![integrate cognito](assets/integratecognito.PNG)
 
 ### Recovery Page
-```
+```js
 import { Auth } from 'aws-amplify';
 
 const onsubmit_send_code = async (event) => {
@@ -178,6 +178,8 @@ const onsubmit_confirm_code = async (event) => {
   return false
 }
 ```
+![recovery page](assets/recovery.PNG)
+
 ### Authenticating Server Side
 
 Add in the `HomeFeedPage.js` a header eto pass along the access token
@@ -189,7 +191,7 @@ Add in the `HomeFeedPage.js` a header eto pass along the access token
 ```
 In the ``app.py``
 
-```
+```py
 cors = CORS(
   app, 
   resources={r"/api/*": {"origins": origins}},
@@ -198,3 +200,7 @@ cors = CORS(
   methods="OPTIONS,GET,HEAD,POST"
 )
 ```
+
+### Improving UI contraste and implementing CSS variables for theming
+
+![improve UI](assets/css.PNG)
